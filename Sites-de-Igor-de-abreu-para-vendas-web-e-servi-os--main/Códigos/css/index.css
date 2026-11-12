@@ -1,0 +1,157 @@
+
+/* Configurações gerais da página */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Centralização e largura do conteúdo */
+.corpo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Cabeçalho de apresentação */
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    background-color: #252936;
+    color: #ffffff;
+
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* Foto de perfil */
+.apresentacao img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+}
+
+/* Texto do cabeçalho */
+.apresentacao-texto h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.apresentacao-texto p {
+    color: #d1d5db;
+    margin-bottom: 0;
+}
+
+/* Seções de conteúdo */
+.secao {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Títulos das seções */
+h2 {
+    color: #252936;
+    margin-top: 0;
+}
+
+/* Listas */
+.secao ul {
+    padding-left: 25px;
+}
+
+.secao li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: #315fc4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #173b89;
+    text-decoration: underline;
+}
+
+/* Área de chamada para contato */
+.chamada {
+    background-color: #e5eaf5;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.chamada p {
+    margin-bottom: 25px;
+}
+
+/* Botão de contato */
+.botao-contato {
+    display: inline-block;
+    background-color: #315fc4;
+    color: #ffffff;
+
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.botao-contato:hover {
+    background-color: #173b89;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+    font-size: 14px;
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 600px) {
+
+    .corpo {
+        padding: 15px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    .apresentacao img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .apresentacao-texto h1 {
+        font-size: 23px;
+    }
+
+    .secao {
+        padding: 20px;
+    }
+
+}
